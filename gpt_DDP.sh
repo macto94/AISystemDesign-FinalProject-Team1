@@ -1,4 +1,4 @@
-deepspeed --num_gpus=4 examples/pytorch/language-modeling/run_clm.py \
+deepspeed --num_gpus=4 run_clm.py \
     --deepspeed cfg/DDP.json \
     --model_name_or_path gpt2-xl \
     --dataset_name wikitext \

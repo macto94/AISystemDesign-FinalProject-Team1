@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=$1,$2,$3,$4 python examples/pytorch/language-modeling/run_clm.py \
+CUDA_VISIBLE_DEVICES=$1,$2,$3,$4 python run_clm.py \
     --model_name_or_path gpt2-xl \
     --dataset_name wikitext \
     --dataset_config_name wikitext-2-raw-v1 \
