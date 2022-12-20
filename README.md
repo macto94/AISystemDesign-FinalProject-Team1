@@ -6,7 +6,7 @@
 - Explore DL training optimization techniques using PyTorch DDP & DeepSpeed
 - Through Nsight System profiling, confirm the techniques' results
 
-## Setup
+## Setup & Run
 ### Prerequisite
 Install specific versions of CUDA, Torch, etc. at your virtual environment using `pip install`. If your CUDA version is lower than 11, you should install suitable torch or upgrade CUDA. My setup is as follows:
 - CUDA : 11.7
