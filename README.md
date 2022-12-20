@@ -8,7 +8,7 @@
 
 ## Setup
 ### Prerequisite
-Install specific versions of CUDA, Torch, etc. at your virtual environment using `pip install`. My setup is as follows:
+Install specific versions of CUDA, Torch, etc. at your virtual environment using `pip install`. If your CUDA version is lower than 11, you should install suitable torch or upgrade CUDA. My setup is as follows:
 - CUDA : 11.7
 - Torch : 1.13.0
 - transformers : 4.26.0.dev0
