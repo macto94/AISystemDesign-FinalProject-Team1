@@ -10,9 +10,9 @@
 There are two options.
 1. I pushed the docker images to public repository of Docker Hub. So you can pull the images and test our project easily.
 But its volume is very large.
-'''bash
+```bash
 docker pull macto94/ai-system-design:
-'''
+```
 2. Or, install specific versions of CUDA, Torch, etc. at your virtual environment. My setup is as follows:
 - CUDA : 11.7
 - Torch : 1.13.0
@@ -31,7 +31,7 @@ docker pull macto94/ai-system-design:
 |      DDP     |  10min 50sec |
 |     ZeRO 1   |  11min 36sec |
 
-### Simple dataset with two optimization methods
+### Memory Usage Comparison
 | Optimization | device 0 | device 1 | device 2 | device 3 |
 |--------------|:--------:|:--------:|:--------:|:--------:|
 |      DP      | 73.26 GiB| 48.17 GiB| 48.17 GiB| 48.17 GiB|
