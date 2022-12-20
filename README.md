@@ -7,18 +7,17 @@
 - Through Nsight System profiling, confirm the techniques' results
 
 ## Setup
-There are two options.
-1. I pushed the docker images to public repository of Docker Hub. So you can pull the images and test our project easily.
-But its volume is very large.
-```bash
-docker pull macto94/ai-system-design:latest
-```
-2. Or, install specific versions of CUDA, Torch, etc. at your virtual environment. My setup is as follows:
+Install specific versions of CUDA, Torch, etc. at your virtual environment using `pip install`. My setup is as follows:
 - CUDA : 11.7
 - Torch : 1.13.0
 - transformers : 4.26.0.dev0
 - DeepSpeed : 0.8.0+7e2103f8
 - Nsight Systems : 2022.1.3.3-1c7b5f7
+```bash
+$ git clone https://github.com/macto94/AISystemDesign-FinalProject-Team1.git team1
+$ cd team1
+$ 
+```
 
 
 
