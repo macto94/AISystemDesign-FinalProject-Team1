@@ -11,7 +11,7 @@ There are two options.
 1. I pushed the docker images to public repository of Docker Hub. So you can pull the images and test our project easily.
 But its volume is very large.
 ```bash
-docker pull macto94/ai-system-design:
+docker pull macto94/ai-system-design:latest
 ```
 2. Or, install specific versions of CUDA, Torch, etc. at your virtual environment. My setup is as follows:
 - CUDA : 11.7
