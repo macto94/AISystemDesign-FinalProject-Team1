@@ -7,19 +7,25 @@
 - Through Nsight System profiling, confirm the techniques' results
 
 ## Setup
+#### Prerequisite
 Install specific versions of CUDA, Torch, etc. at your virtual environment using `pip install`. My setup is as follows:
 - CUDA : 11.7
 - Torch : 1.13.0
 - transformers : 4.26.0.dev0
 - DeepSpeed : 0.8.0+7e2103f8
-- Nsight Systems : 2022.1.3.3-1c7b5f7 installation guide(https://developer.nvidia.com/gameworksdownload#?dn=nsight-systems-2022-5)
+- Nsight Systems : 2022.1.3.3-1c7b5f7 
+  - installation guide(https://developer.nvidia.com/gameworksdownload#?dn=nsight-systems-2022-5)
+
 ```bash
 $ git clone https://github.com/macto94/AISystemDesign-FinalProject-Team1.git team1
 $ cd team1
-$ 
+# DP
+$ bash gpt_lm.sh 0,1,2,3 # device number you want
+# DDP
+$ bash gpt_DDP.sh
+# ZeRO 1
+$ bash gpt_zero.sh
 ```
-
-
 
 ## Experimental Results
 

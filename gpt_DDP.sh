@@ -1,0 +1,11 @@
+deepspeed --num_gpus=4 examples/pytorch/language-modeling/run_clm.py \
+    --deepspeed cfg/DDP.json \
+    --model_name_or_path gpt2-xl \
+    --dataset_name wikitext \
+    --dataset_config_name wikitext-2-raw-v1 \
+    --per_device_train_batch_size 2 \
+    --do_train \
+    --output_dir out/test \
+    --overwrite_output_dir \
+    --save_strategy no \
+    --num_train_epochs 1
