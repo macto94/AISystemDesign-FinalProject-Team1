@@ -30,7 +30,8 @@ $ bash gpt_zero.sh
 
 ### Profiling
 ```bash
-$ nsys profile --stats true --force-overwrite true -t cuda,osrt,nvtx,cudnn -o [OUTPUT_NAME].qdstrm -w true bash gpt_[lm|DDP|zero].sh
+$ nsys profile --stats true --force-overwrite true -t cuda,osrt,nvtx,cudnn \
+-o [OUTPUT_NAME].qdstrm -w true bash gpt_[lm|DDP|zero].sh
 ```
 Then profile file will be created. You can open them through Nsight System tool.
 
